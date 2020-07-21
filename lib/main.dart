@@ -19,6 +19,10 @@ class HowIsMyDollar extends StatelessWidget {
       ],
       supportedLocales: Internalization.delegate.supportedLocales,
       
+      theme: ThemeData(
+        primaryColor: Colors.green[900],
+        accentColor: Colors.greenAccent[700]
+      ),
       title: 'How is the dollar',
       home: HomeScreen()
     );

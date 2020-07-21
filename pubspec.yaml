@@ -23,6 +23,8 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  http: ^0.12.2
+  http_interceptor: ^0.3.2
   flutter_localizations:
     sdk: flutter
 
