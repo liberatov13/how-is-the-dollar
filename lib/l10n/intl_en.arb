@@ -1,4 +1,8 @@
 {
     "appName" : "How is the Dollar",
-    "helloWorld" : "Hello Word"
+    "currencyInformation_currencyInformation" : "Currency information",
+    "currencyInformation_currencyCode" : "Code",
+    "currencyInformation_currencyName" : "Name",
+    "currencyInformation_currencyHigh" : "High",
+    "currencyInformation_currencyLow" : "Low"
 }

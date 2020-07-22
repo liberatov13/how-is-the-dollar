@@ -1,4 +1,8 @@
 {
     "appName" : "How is the Dollar",
-    "helloWorld" : "Olá mundo"
+    "currencyInformation_currencyInformation" : "Informações da moéda",
+    "currencyInformation_currencyCode" : "Código",
+    "currencyInformation_currencyName" : "Tipo",
+    "currencyInformation_currencyHigh" : "Alta",
+    "currencyInformation_currencyLow" : "Baixa"
 }

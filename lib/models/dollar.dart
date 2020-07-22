@@ -1,8 +1,6 @@
 class Dollar {
-  final String _code;
-  final String _name;
-  final double _high;
-  final double _low;
+  final String _code, _name;
+  final double _high, _low;
 
   Dollar(this._code, this._name, this._high, this._low);
 
@@ -13,7 +11,9 @@ class Dollar {
   this._high = double.parse(json['USD']['high']),
   this._low = double.parse(json['USD']['low']);
 
-  double getHigh() {
-    return this._high;
-  }
+  String get getCode => this._code;
+  String get getName => this._name;
+  double get getHigh => this._high;
+  double get getLow => this._low;
+
 }

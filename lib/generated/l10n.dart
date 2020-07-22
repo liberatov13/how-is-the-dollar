@@ -43,11 +43,51 @@ class Internalization {
     );
   }
 
-  /// `Hello Word`
-  String get helloWorld {
+  /// `Currency information`
+  String get currencyInformation_currencyInformation {
     return Intl.message(
-      'Hello Word',
-      name: 'helloWorld',
+      'Currency information',
+      name: 'currencyInformation_currencyInformation',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Code`
+  String get currencyInformation_currencyCode {
+    return Intl.message(
+      'Code',
+      name: 'currencyInformation_currencyCode',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Name`
+  String get currencyInformation_currencyName {
+    return Intl.message(
+      'Name',
+      name: 'currencyInformation_currencyName',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `High`
+  String get currencyInformation_currencyHigh {
+    return Intl.message(
+      'High',
+      name: 'currencyInformation_currencyHigh',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Low`
+  String get currencyInformation_currencyLow {
+    return Intl.message(
+      'Low',
+      name: 'currencyInformation_currencyLow',
       desc: '',
       args: [],
     );

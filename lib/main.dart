@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:how_is_the_dollar/generated/l10n.dart';
+import 'package:how_is_the_dollar/screens/currency_information_screen.dart';
 import 'package:how_is_the_dollar/screens/home_screen.dart';
 
 void main() {
@@ -18,13 +19,21 @@ class HowIsMyDollar extends StatelessWidget {
         GlobalCupertinoLocalizations.delegate
       ],
       supportedLocales: Internalization.delegate.supportedLocales,
+
+      routes: {
+        '/' : (context) => HomeScreen(),
+        '/currency_information' : (context) => CurrencyInformationScreen()
+      },
       
       theme: ThemeData(
         primaryColor: Colors.green[900],
-        accentColor: Colors.greenAccent[700]
+        accentColor: Colors.greenAccent[700],
+        backgroundColor: Colors.green[600]
+      ),
+      darkTheme: ThemeData(
+        primaryColor: Colors.green[900]
       ),
       title: 'How is the dollar',
-      home: HomeScreen()
     );
   }
 }
