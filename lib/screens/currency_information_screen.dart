@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:how_is_the_dollar/components/alert.dart';
 import 'package:how_is_the_dollar/components/circular_load.dart';
+import 'package:how_is_the_dollar/components/currency_information_table.dart';
 import 'package:how_is_the_dollar/generated/l10n.dart';
 import 'package:how_is_the_dollar/http/webclients/dollar_webclient.dart';
 import 'package:how_is_the_dollar/models/dollar.dart';
@@ -31,27 +33,10 @@ class CurrencyInformationScreen extends StatelessWidget {
               case ConnectionState.done:
                 Dollar _dollar = snapshot.data;
               
-                return DataTable(
-                  columns: [
-                    DataColumn(label: Text(Internalization.of(context).currencyInformation_currencyCode)),
-                    DataColumn(label: Text(Internalization.of(context).currencyInformation_currencyName)),
-                    DataColumn(label: Text(Internalization.of(context).currencyInformation_currencyHigh)),
-                    DataColumn(label: Text(Internalization.of(context).currencyInformation_currencyLow)),
-                  ],
-                  rows: [
-                    DataRow(
-                      cells: [
-                        DataCell(Text(_dollar.getCode)),
-                        DataCell(Text(_dollar.getName)),
-                        DataCell(Text(_dollar.getHigh.toString())),
-                        DataCell(Text(_dollar.getLow.toString())),
-                      ]
-                    )
-                  ],
-                );
+                return CurrencyInformationTable(dollar: _dollar);
                 break;
             }
-            return Center(child: Text('Unkwon error'));
+            return Alert(Internalization.of(context).noConnection);
           },
         )
       ),
