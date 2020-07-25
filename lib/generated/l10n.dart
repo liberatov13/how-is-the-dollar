@@ -43,6 +43,41 @@ class Internalization {
     );
   }
 
+  /// `Loading`
+  String get loading {
+    return Intl.message(
+      'Loading',
+      name: 'loading',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `No connection`
+  String get noConnection {
+    return Intl.message(
+      'No connection',
+      name: 'noConnection',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `{currencyCode, select, BRA {R$} USD {U$} other {currenyCode}}`
+  String home_currencyCode(Object currencyCode) {
+    return Intl.select(
+      currencyCode,
+      {
+        'BRA': 'R\$',
+        'USD': 'U\$',
+        'other': 'currenyCode',
+      },
+      name: 'home_currencyCode',
+      desc: '',
+      args: [currencyCode],
+    );
+  }
+
   /// `Currency information`
   String get currencyInformation_currencyInformation {
     return Intl.message(

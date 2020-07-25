@@ -19,6 +19,8 @@ typedef String MessageIfAbsent(String messageStr, List<dynamic> args);
 class MessageLookup extends MessageLookupByLibrary {
   String get localeName => 'en';
 
+  static m0(currencyCode) => "${Intl.select(currencyCode, {'BRA': 'R\$', 'USD': 'U\$', 'other': 'currenyCode', })}";
+
   final messages = _notInlinedMessages(_notInlinedMessages);
   static _notInlinedMessages(_) => <String, Function> {
     "appName" : MessageLookupByLibrary.simpleMessage("How is the Dollar"),
@@ -26,6 +28,9 @@ class MessageLookup extends MessageLookupByLibrary {
     "currencyInformation_currencyHigh" : MessageLookupByLibrary.simpleMessage("High"),
     "currencyInformation_currencyInformation" : MessageLookupByLibrary.simpleMessage("Currency information"),
     "currencyInformation_currencyLow" : MessageLookupByLibrary.simpleMessage("Low"),
-    "currencyInformation_currencyName" : MessageLookupByLibrary.simpleMessage("Name")
+    "currencyInformation_currencyName" : MessageLookupByLibrary.simpleMessage("Name"),
+    "home_currencyCode" : m0,
+    "loading" : MessageLookupByLibrary.simpleMessage("Loading"),
+    "noConnection" : MessageLookupByLibrary.simpleMessage("No connection")
   };
 }

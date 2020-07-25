@@ -1,5 +1,8 @@
 {
     "appName" : "How is the Dollar",
+    "loading" : "Loading",
+    "noConnection" : "No connection",
+    "home_currencyCode" : "{currencyCode, select, BRA {R$} USD {U$} other {currenyCode}}",
     "currencyInformation_currencyInformation" : "Currency information",
     "currencyInformation_currencyCode" : "Code",
     "currencyInformation_currencyName" : "Name",
