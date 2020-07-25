@@ -30,9 +30,6 @@ class HowIsMyDollar extends StatelessWidget {
         accentColor: Colors.greenAccent[700],
         backgroundColor: Colors.green[600]
       ),
-      darkTheme: ThemeData(
-        primaryColor: Colors.green[900]
-      ),
       title: 'How is the dollar',
     );
   }
