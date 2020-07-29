@@ -3,6 +3,7 @@ import 'package:how_is_the_dollar/components/alert.dart';
 import 'package:how_is_the_dollar/components/circular_load.dart';
 import 'package:how_is_the_dollar/generated/l10n.dart';
 import 'package:how_is_the_dollar/http/webclients/dollar_webclient.dart';
+import 'package:how_is_the_dollar/models/dollar.dart';
 
 class HomeScreen extends StatelessWidget {
   @override
@@ -31,6 +32,7 @@ class HomeScreen extends StatelessWidget {
               case ConnectionState.active:
                 break;
               case ConnectionState.done:
+                Dollar _dollar = snapshot.data;
                 return Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: <Widget>[
@@ -39,7 +41,8 @@ class HomeScreen extends StatelessWidget {
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: <Widget>[
                         Text(
-                          Internalization.of(context).home_currencyCode("USD") + ' ${snapshot.data.getHigh.toString()}',
+                          Internalization.of(context).home_currencyCode("USD") +
+                          ' ${_dollar.getHigh.toStringAsPrecision(3)}',
                           style: TextStyle(fontSize: 28),
                         ),
                         IconButton(

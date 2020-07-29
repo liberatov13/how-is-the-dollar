@@ -42,24 +42,22 @@ class CurrencyInformationTable extends StatelessWidget {
             DataCell(
               Text(
                 _dollar.getCode,
-                textAlign: TextAlign.center,
               ),
             ),
             DataCell(
               Text(
                 _dollar.getName,
+              ),
+            ),
+            DataCell(
+              Text(
+                _dollar.getHigh.toStringAsPrecision(3),
                 textAlign: TextAlign.center,
               ),
             ),
             DataCell(
               Text(
-                _dollar.getHigh.toString(),
-                textAlign: TextAlign.center,
-              ),
-            ),
-            DataCell(
-              Text(
-                _dollar.getLow.toString(),
+                _dollar.getLow.toStringAsPrecision(3),
                 textAlign: TextAlign.center,
               ),
             ),
