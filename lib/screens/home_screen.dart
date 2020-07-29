@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:how_is_the_dollar/components/alert.dart';
 import 'package:how_is_the_dollar/components/circular_load.dart';
+import 'package:how_is_the_dollar/components/lateral_menu.dart';
 import 'package:how_is_the_dollar/generated/l10n.dart';
 import 'package:how_is_the_dollar/http/webclients/dollar_webclient.dart';
 import 'package:how_is_the_dollar/models/dollar.dart';
@@ -15,14 +16,14 @@ class HomeScreen extends StatelessWidget {
           style: TextStyle(fontSize: 24),
         ),
         centerTitle: true,
-        backgroundColor: Theme.of(context).primaryColor,
       ),
-      backgroundColor: Theme.of(context).backgroundColor,
+      drawer: LateralMenu(),
+
       body: Center(
         child: FutureBuilder(
           future: DollarWebClient().findPrice(),
           builder: (context, snapshot) {
-            
+
             switch (snapshot.connectionState) {
               case ConnectionState.none:
                 break;
@@ -41,7 +42,7 @@ class HomeScreen extends StatelessWidget {
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: <Widget>[
                         Text(
-                          Internalization.of(context).home_currencyCode("USD") +
+                          Internalization.of(context).home_currencyCode('BRA') +
                           ' ${_dollar.getHigh.toStringAsPrecision(3)}',
                           style: TextStyle(fontSize: 28),
                         ),
@@ -57,8 +58,8 @@ class HomeScreen extends StatelessWidget {
                       style: TextStyle(fontSize: 28),
                     ),
                     Text(
-                      Internalization.of(context).home_currencyCode('BRA') + ' 1.00',
-                      style: TextStyle(fontSize: 26),
+                      Internalization.of(context).home_currencyCode('USD') + ' 1.00',
+                      style: TextStyle(fontSize: 28),
                     ),
                   ],
                 );

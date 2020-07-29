@@ -63,6 +63,16 @@ class Internalization {
     );
   }
 
+  /// `Conversion calculator`
+  String get lateralMenu_conversionCalculator {
+    return Intl.message(
+      'Conversion calculator',
+      name: 'lateralMenu_conversionCalculator',
+      desc: '',
+      args: [],
+    );
+  }
+
   /// `{currencyCode, select, BRA {R$} USD {U$} other {currenyCode}}`
   String home_currencyCode(Object currencyCode) {
     return Intl.select(
@@ -75,6 +85,16 @@ class Internalization {
       name: 'home_currencyCode',
       desc: '',
       args: [currencyCode],
+    );
+  }
+
+  /// `Conversion calculator`
+  String get conversionCalculator_conversionCalculator {
+    return Intl.message(
+      'Conversion calculator',
+      name: 'conversionCalculator_conversionCalculator',
+      desc: '',
+      args: [],
     );
   }
 

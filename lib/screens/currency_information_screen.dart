@@ -14,7 +14,6 @@ class CurrencyInformationScreen extends StatelessWidget {
       appBar: AppBar(
         title: Text(Internalization.of(context).currencyInformation_currencyInformation),
       ),
-      backgroundColor: Theme.of(context).backgroundColor,
 
       body: Center(
         child: FutureBuilder(

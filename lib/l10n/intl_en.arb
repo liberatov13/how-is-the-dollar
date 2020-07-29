@@ -2,7 +2,10 @@
     "appName" : "How is the Dollar",
     "loading" : "Loading",
     "noConnection" : "No connection",
+    "lateralMenu_conversionCalculator" : "Conversion calculator",
+
     "home_currencyCode" : "{currencyCode, select, BRA {R$} USD {U$} other {currenyCode}}",
+    "conversionCalculator_conversionCalculator" : "Conversion calculator",
     "currencyInformation_currencyInformation" : "Currency information",
     "currencyInformation_currencyCode" : "Code",
     "currencyInformation_currencyName" : "Name",
