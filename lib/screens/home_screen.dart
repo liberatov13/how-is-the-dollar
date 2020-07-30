@@ -43,7 +43,7 @@ class HomeScreen extends StatelessWidget {
                       children: <Widget>[
                         Text(
                           Internalization.of(context).home_currencyCode('BRA') +
-                          ' ${_dollar.getHigh.toStringAsPrecision(3)}',
+                          ' ${_dollar.getHigh.toStringAsFixed(2)}',
                           style: TextStyle(fontSize: 28),
                         ),
                         IconButton(

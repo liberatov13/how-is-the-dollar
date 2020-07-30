@@ -6,6 +6,9 @@
 
     "home_currencyCode" : "{currencyCode, select, BRA {R$} USD {U$} other {currenyCode}}",
     "conversionCalculator_conversionCalculator" : "Calculadora de conversão",
+    "conversionCalculator_calculateQuote" : "Calcular cotação",
+    "conversionCalculator_total" : "Total",
+    "conversionCalculator_value" : "Valor",
     "currencyInformation_currencyInformation" : "Informações da moéda",
     "currencyInformation_currencyCode" : "Código",
     "currencyInformation_currencyName" : "Tipo",

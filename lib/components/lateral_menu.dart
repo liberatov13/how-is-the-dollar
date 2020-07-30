@@ -19,7 +19,10 @@ class LateralMenu extends StatelessWidget {
           Card(
             elevation: 18,
             child: ListTile(
-              leading: Icon(Icons.exposure),
+              leading: Icon(
+                Icons.exposure,
+                color: Colors.black,
+              ),
               title: Text(
                 Internalization.of(context).lateralMenu_conversionCalculator
               ),

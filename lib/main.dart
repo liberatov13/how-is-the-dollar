@@ -26,13 +26,26 @@ class HowIsMyDollar extends StatelessWidget {
         '/currency_information' : (context) => CurrencyInformationScreen(),
         '/conversion_calculator' : (context) => ConversionCalculatorScreen(),
       },
-      
+
       theme: ThemeData(
         primaryColor: Colors.green[900],
         accentColor: Colors.greenAccent[700],
         cardColor: Colors.green[600],
         scaffoldBackgroundColor: Colors.green[600],
+        
+        buttonTheme: ButtonThemeData(
+          buttonColor: Colors.green[800],
+          splashColor: Colors.greenAccent[900],
+          minWidth: double.maxFinite
+        ),
+
+        inputDecorationTheme: InputDecorationTheme(
+          hintStyle: TextStyle(fontSize: 20),
+          labelStyle: TextStyle(fontSize: 22, color: Colors.black),
+          border: OutlineInputBorder(borderRadius: BorderRadius.circular(8)),
+        )
       ),
+
       title: 'How is the dollar',
     );
   }

@@ -51,13 +51,13 @@ class CurrencyInformationTable extends StatelessWidget {
             ),
             DataCell(
               Text(
-                _dollar.getHigh.toStringAsPrecision(3),
+                _dollar.getHigh.toStringAsFixed(2),
                 textAlign: TextAlign.center,
               ),
             ),
             DataCell(
               Text(
-                _dollar.getLow.toStringAsPrecision(3),
+                _dollar.getLow.toStringAsFixed(2),
                 textAlign: TextAlign.center,
               ),
             ),

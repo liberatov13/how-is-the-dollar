@@ -24,7 +24,10 @@ class MessageLookup extends MessageLookupByLibrary {
   final messages = _notInlinedMessages(_notInlinedMessages);
   static _notInlinedMessages(_) => <String, Function> {
     "appName" : MessageLookupByLibrary.simpleMessage("How is the Dollar"),
+    "conversionCalculator_calculateQuote" : MessageLookupByLibrary.simpleMessage("Calcular cotação"),
     "conversionCalculator_conversionCalculator" : MessageLookupByLibrary.simpleMessage("Calculadora de conversão"),
+    "conversionCalculator_total" : MessageLookupByLibrary.simpleMessage("Total"),
+    "conversionCalculator_value" : MessageLookupByLibrary.simpleMessage("Valor"),
     "currencyInformation_currencyCode" : MessageLookupByLibrary.simpleMessage("Código"),
     "currencyInformation_currencyHigh" : MessageLookupByLibrary.simpleMessage("Alta"),
     "currencyInformation_currencyInformation" : MessageLookupByLibrary.simpleMessage("Informações da moéda"),

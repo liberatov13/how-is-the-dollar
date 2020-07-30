@@ -98,6 +98,36 @@ class Internalization {
     );
   }
 
+  /// `Calculate quote`
+  String get conversionCalculator_calculateQuote {
+    return Intl.message(
+      'Calculate quote',
+      name: 'conversionCalculator_calculateQuote',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Total`
+  String get conversionCalculator_total {
+    return Intl.message(
+      'Total',
+      name: 'conversionCalculator_total',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Value`
+  String get conversionCalculator_value {
+    return Intl.message(
+      'Value',
+      name: 'conversionCalculator_value',
+      desc: '',
+      args: [],
+    );
+  }
+
   /// `Currency information`
   String get currencyInformation_currencyInformation {
     return Intl.message(

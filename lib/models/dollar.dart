@@ -16,4 +16,9 @@ class Dollar {
   double get getHigh => this._high;
   double get getLow => this._low;
 
+  double convertFromReal(double value) {
+    print('Hey ${this._high * value}');
+    return this._high * value;
+  }
+
 }
