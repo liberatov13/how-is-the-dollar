@@ -7,7 +7,7 @@ import 'package:http/http.dart';
 class DollarWebClient {
 
   Future<Dollar> findPrice() async {
-    Response response = await client.get('$url/all/USD-BRL').timeout(Duration(seconds: 5));
+    Response response = await client.get('$url/all/USD-BRL').timeout(Duration(seconds: 15));
     return Dollar.fromJson(jsonDecode(response.body));
   }
 }

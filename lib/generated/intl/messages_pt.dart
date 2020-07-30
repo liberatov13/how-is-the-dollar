@@ -30,7 +30,7 @@ class MessageLookup extends MessageLookupByLibrary {
     "conversionCalculator_value" : MessageLookupByLibrary.simpleMessage("Valor"),
     "currencyInformation_currencyCode" : MessageLookupByLibrary.simpleMessage("Código"),
     "currencyInformation_currencyHigh" : MessageLookupByLibrary.simpleMessage("Alta"),
-    "currencyInformation_currencyInformation" : MessageLookupByLibrary.simpleMessage("Informações da moéda"),
+    "currencyInformation_currencyInformation" : MessageLookupByLibrary.simpleMessage("Informações da moeda"),
     "currencyInformation_currencyLow" : MessageLookupByLibrary.simpleMessage("Baixa"),
     "currencyInformation_currencyName" : MessageLookupByLibrary.simpleMessage("Tipo"),
     "home_currencyCode" : m0,

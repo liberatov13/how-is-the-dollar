@@ -1,6 +1,6 @@
-# how_is_the_dollar
+# How Is The Dollar
 
-A new Flutter project.
+A Flutter project of a currency converter.
 
 ## Getting Started
 

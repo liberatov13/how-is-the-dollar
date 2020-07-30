@@ -9,7 +9,6 @@ class CircularLoad extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.center,
       children: <Widget>[
         CircularProgressIndicator(
-          backgroundColor: Colors.black,
           strokeWidth: 5,
         ),
         Padding(

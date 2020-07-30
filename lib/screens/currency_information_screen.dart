@@ -32,7 +32,9 @@ class CurrencyInformationScreen extends StatelessWidget {
               case ConnectionState.done:
                 Dollar _dollar = snapshot.data;
               
-                return CurrencyInformationTable(dollar: _dollar);
+                return Card(
+                  child: CurrencyInformationTable(dollar: _dollar),
+                );
                 break;
             }
             return Alert(Internalization.of(context).noConnection);

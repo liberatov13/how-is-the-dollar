@@ -47,6 +47,7 @@ class CurrencyInformationTable extends StatelessWidget {
             DataCell(
               Text(
                 _dollar.getName,
+                textAlign: TextAlign.center,
               ),
             ),
             DataCell(
