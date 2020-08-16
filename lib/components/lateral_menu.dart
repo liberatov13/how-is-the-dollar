@@ -24,7 +24,10 @@ class LateralMenu extends StatelessWidget {
               ),
 
               title: Text(
-                Internalization.of(context).lateralMenu_conversionCalculator
+                Internalization.of(context).lateralMenu_conversionCalculator,
+                style: TextStyle(
+                  color: Colors.black
+                ),
               ),
               onTap: () => Navigator.pushNamed(context, '/conversion_calculator'),
             ),

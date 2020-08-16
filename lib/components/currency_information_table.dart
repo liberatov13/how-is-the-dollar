@@ -18,21 +18,25 @@ class CurrencyInformationTable extends StatelessWidget {
         DataColumn(
           label: Text(
             Internalization.of(context).currencyInformation_currencyCode,
+            style: TextStyle(color: Colors.black),
           ),
         ),
         DataColumn(
           label: Text(
             Internalization.of(context).currencyInformation_currencyName,
+            style: TextStyle(color: Colors.black),
           ),
         ),
         DataColumn(
           label: Text(
             Internalization.of(context).currencyInformation_currencyHigh,
+            style: TextStyle(color: Colors.black),
           ),
         ),
         DataColumn(
           label: Text(
             Internalization.of(context).currencyInformation_currencyLow,
+            style: TextStyle(color: Colors.black),
           ),
         ),
       ],
@@ -42,24 +46,28 @@ class CurrencyInformationTable extends StatelessWidget {
             DataCell(
               Text(
                 _dollar.getCode,
+                style: TextStyle(color: Colors.black),
               ),
             ),
             DataCell(
               Text(
                 _dollar.getName,
                 textAlign: TextAlign.center,
+                style: TextStyle(color: Colors.black),
               ),
             ),
             DataCell(
               Text(
                 _dollar.getHigh.toStringAsFixed(2),
                 textAlign: TextAlign.center,
+                style: TextStyle(color: Colors.black),
               ),
             ),
             DataCell(
               Text(
                 _dollar.getLow.toStringAsFixed(2),
                 textAlign: TextAlign.center,
+                style: TextStyle(color: Colors.black),
               ),
             ),
           ],

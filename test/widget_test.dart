@@ -8,7 +8,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 
-import 'package:how_is_the_dollar/main.dart';
+import 'package:how_is_the_dollar/how_is_the_dollar.dart';
 
 void main() {
   testWidgets('Counter increments smoke test', (WidgetTester tester) async {

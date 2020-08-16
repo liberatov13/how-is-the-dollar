@@ -5,10 +5,12 @@
     "lateralMenu_conversionCalculator" : "Conversion calculator",
 
     "home_currencyCode" : "{currencyCode, select, BRA {R$} USD {U$} other {currenyCode}}",
+    
     "conversionCalculator_conversionCalculator" : "Conversion calculator",
     "conversionCalculator_calculateQuote" : "Calculate quote",
     "conversionCalculator_total" : "Total",
     "conversionCalculator_value" : "Value",
+
     "currencyInformation_currencyInformation" : "Currency information",
     "currencyInformation_currencyCode" : "Code",
     "currencyInformation_currencyName" : "Name",

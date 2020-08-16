@@ -35,13 +35,14 @@ class HowIsMyDollar extends StatelessWidget {
         ),
         
         buttonTheme: ButtonThemeData(
-          buttonColor: Colors.green[800],
-          splashColor: Colors.greenAccent[900],
-          minWidth: double.maxFinite
+          buttonColor: Colors.greenAccent[700],
+          minWidth: double.maxFinite,
+          textTheme: ButtonTextTheme.primary,
         ),
 
         textTheme: TextTheme(
-          
+          bodyText1: TextStyle(color: Colors.black),
+          button: TextStyle(color: Colors.black),
         ),
 
         inputDecorationTheme: InputDecorationTheme(

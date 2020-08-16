@@ -80,7 +80,7 @@ class _ConversionCalculatorScreenState extends State<ConversionCalculatorScreen>
 
                 decoration: InputDecoration(
                   icon: Icon(Icons.monetization_on, color: Colors.black,),
-                  hintText: Internalization.of(context).home_currencyCode('BRA'),
+                  hintText: '${Internalization.of(context).home_currencyCode('BRA')} 100.50',
                   labelText: Internalization.of(context).conversionCalculator_value,
                 ),
               ),
@@ -88,11 +88,12 @@ class _ConversionCalculatorScreenState extends State<ConversionCalculatorScreen>
           ),
 
           Padding(
-            padding: const EdgeInsets.all(8.0),
+            padding: const EdgeInsets.all(16.0),
             child: RaisedButton.icon(
               icon: Icon(Icons.exposure),
               label: Text(
-                Internalization.of(context).conversionCalculator_calculateQuote,),
+                Internalization.of(context).conversionCalculator_calculateQuote,
+              ),
               onPressed: () {
                 updatesTotal(_dollar);
               },
